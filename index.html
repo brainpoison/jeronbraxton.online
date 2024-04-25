@@ -12,12 +12,7 @@
   <div id="content-wrap">
 
 <div id="content">
- <img src="IMG_2603.PNG"  alt="image" style="    
- width: 52%;
- position: absolute;
- top: 50%;
- right: 50%;
- transform: translate(50%,-50%);">
+ <img id="image" src="IMG_2603.PNG"  alt="image">
     
 <p id="name"> Jeron Braxton</p>
 
@@ -39,6 +34,13 @@
 text-align:center;
 }
 
+#image{  
+ width: 52%;
+ position: absolute;
+ top: 50%;
+ right: 50%;
+ transform: translate(50%,-50%);"
+}
 
 #name {
 position: absolute;
@@ -52,7 +54,7 @@ p{
     color: #444444;
     font-size: 9pt;
     background-color: #FAFAFA;
-    font-size:15px;
+    font-size:20pt;
 }
  
 body
@@ -61,6 +63,13 @@ body
     color: #444444;
     font-size: 9pt;
     background-color: #FAFAFA;
+}
+
+@media screen and (max-width: 700px) { /* Specific to this particular element on phones*/ 
+    #image{  
+ width: 72%;
+
+}
 }
 
 </style>
